@@ -6,7 +6,12 @@
 //! assert_eq!(4, 2 + 2);
 //! ```
 
-mod world_mod {
+pub extern crate rand;
+pub extern crate sudo as super_sudo;
+
+/// Outer mod comment
+pub mod world_mod {
+
     #[derive(Debug)]
     pub struct WorldStruct {
         i: usize,
@@ -17,8 +22,10 @@ mod world_mod {
         }
     }
 }
+pub mod mod2;
+pub mod mod3;
 
-pub use rand;
+//pub use world_mod;
 pub use sudo as super_user;
 pub use world_mod::WorldStruct as World;
 
@@ -41,7 +48,7 @@ pub fn chained() {
 pub fn short() {
     unimplemented!()
 }
-/// tested description
+/// tested description with `assert!(true)`
 ///
 /// ```
 /// assert!(true);
@@ -58,4 +65,18 @@ pub fn text_that_is_longer() {
 /// Closing Text
 pub fn quit() {
     unimplemented!()
+}
+
+/// Unsafe Function declared first
+pub unsafe fn unsafe_function2() {
+    unimplemented!()
+}
+/// Unsafe Function declared second
+pub unsafe fn unsafe_function1() {
+    unimplemented!()
+}
+
+/// Last function in code
+pub fn last_function() {
+    todo!()
 }
