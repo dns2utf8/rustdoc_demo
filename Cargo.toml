@@ -1,0 +1,19 @@
+[package]
+name = "rustdoc_demo"
+version = "0.1.0"
+authors = ["Stefan Schindler <dns2utf8@estada.ch>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "This is used to demo all the rustdoc features"
+license = "AGPL-3.0"
+keywords = ["rustdoc", "demo"]
+categories = ["compilers", "development-tools"]
+documentation = "https://docs.rs/rustdoc_demo"
+homepage = "https://docs.rs/rustdoc_demo"
+repository = "https://github.com/dns2utf8/rustdoc_demo"
+
+[dependencies]
+#generic-array = "0.14.4"
+rand = "0.8.3"
+sudo = "0.6.0"
