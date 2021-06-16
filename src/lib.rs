@@ -1,3 +1,5 @@
+#![feature(doc_cfg)]
+
 //! This is used to demo all the rustdoc features
 //!
 //! # Example
@@ -22,6 +24,7 @@ pub mod world_mod {
         }
     }
 }
+pub mod mod1;
 pub mod mod2;
 pub mod mod3;
 
